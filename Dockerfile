@@ -50,6 +50,4 @@ RUN set -ex; \
     
 VOLUME ["/home/weewx/public_html", "/home/weewx/config"]
 
-EXPOSE 8080/tcp
-
 CMD ["/home/weewx/bin/weewxd", "-x", "/home/weewx/config/weewx.conf"]
